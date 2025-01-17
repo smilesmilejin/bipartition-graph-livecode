@@ -1,4 +1,6 @@
 from activity.main import possible_bipartition
+# Uncomment the line below and comment the line above to try out the tests using the color based solution!
+# from activity.color_based_solution import possible_bipartition
 import pytest 
 
 def test_possible_bipartition_with_acyclic_graph_and_island():
@@ -61,7 +63,7 @@ def test_possible_bipartition_acyclic_graph():
     }
 
     #Act/Assert
-    assert possible_bipartition(dislikes) is False
+    assert possible_bipartition(dislikes) is True
 
 def test_possible_bipartition_empty_graph():
     #Arrange/Act/Assert
@@ -110,6 +112,6 @@ def test_possible_bipartition_acyclic_graph_with_ordering():
         "Scruffy": ["Rufus"], 
         "T-Bone": ["Alfie", "Rufus"]
     }
-    
+
     #Act/Assert
     assert possible_bipartition(dislikes) is True
