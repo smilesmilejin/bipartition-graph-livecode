@@ -61,7 +61,8 @@ def test_possible_bipartition_acyclic_graph():
     }
 
     #Act/Assert
-    assert possible_bipartition(dislikes) is False
+    # assert possible_bipartition(dislikes) is False
+    assert possible_bipartition(dislikes) is True
 
 def test_possible_bipartition_empty_graph():
     #Arrange/Act/Assert
